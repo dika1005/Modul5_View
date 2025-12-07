@@ -4,20 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F4F8"
+    android:background="@drawable/gradient_background"
     tools:context=".DashboardActivity">
 
     <TextView
         android:id="@+id/tv_welcome"
+        style="@style/Judul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:text="Selamat Datang!"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,13 +31,11 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_profile"
+            style="@style/CardViewStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,27 +47,24 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@mipmap/logo_uniku" />
 
                 <TextView
+                    style="@style/subJudul"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Profil"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:text="Profil" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_informasi"
+            style="@style/CardViewStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,27 +76,24 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@mipmap/logo_uniku" />
 
                 <TextView
+                    style="@style/subJudul"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Informasi"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:text="Informasi" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_galeri"
+            style="@style/CardViewStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -115,27 +105,24 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@mipmap/logo_uniku" />
 
                 <TextView
+                    style="@style/subJudul"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Galeri"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:text="Galeri" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_web"
+            style="@style/CardViewStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -147,15 +134,14 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_launcher_foreground" />
+                    android:src="@mipmap/logo_uniku" />
 
                 <TextView
+                    style="@style/subJudul"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Web"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:text="Web"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -163,14 +149,13 @@
 
     <Button
         android:id="@+id/btn_logout"
+        style="@style/newButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="32dp"
-        android:background="?attr/colorPrimary"
         android:text="Logout"
-        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
